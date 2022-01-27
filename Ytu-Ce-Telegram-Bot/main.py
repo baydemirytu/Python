@@ -8,7 +8,7 @@ def main():
     html_file = requests.get('https://ytuce.maliayas.com/').text
     soup = BeautifulSoup(html_file, 'lxml')
     ilk_baslik = soup.find('div', class_='text_title').text
-    print("başladı")
+
     while 1:
         html_file = requests.get('https://ytuce.maliayas.com/').text
         soup = BeautifulSoup(html_file, 'lxml')
